@@ -1,7 +1,9 @@
 name: releases
 
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - v*
 
 jobs:
   build-cli-cross:
